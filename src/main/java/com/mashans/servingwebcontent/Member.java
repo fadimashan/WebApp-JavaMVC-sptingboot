@@ -18,7 +18,7 @@ public class Member {
         super();
     }
 
-    public Member( String name, Integer age) {
+    public Member(String name, Integer age) {
         super();
         this.name = name;
         this.age = age;
@@ -37,7 +37,6 @@ public class Member {
     }
 
 
-
     public long getId() {
         return id;
     }
@@ -49,8 +48,6 @@ public class Member {
     public int getAge() {
         return age;
     }
-
-
 
 
 }

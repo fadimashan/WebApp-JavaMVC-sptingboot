@@ -6,18 +6,6 @@ import java.util.List;
 @Entity
 public class Vehicle {
 
-    public Vehicle() {
-        super();
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -28,13 +16,23 @@ public class Vehicle {
     private List<Member> members;
 
 
-
-   public Vehicle(String type, String color, Integer wheelNumber, List<Member> members) {
-    //public Vehicle(String type, String color, Integer wheelNumber) {
+    public Vehicle(String type, String color, Integer wheelNumber, List<Member> members) {
         this.type = type;
         this.color = color;
         this.wheelNumber = wheelNumber;
         this.members = members;
+    }
+
+    public Vehicle() {
+        super();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
 
