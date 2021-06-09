@@ -31,7 +31,9 @@
                                 <span th:text="${member.name}"/>
                             </span>
                         </td>
-                        <td> <button type="button" class="btn btn-secondary">Secondary</button></td>
+                        <td>
+                            <a th:href="@{/vehicle/{id}(id=${vehicle.id})}" type="button" class="btn btn-secondary">Member details</a>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
